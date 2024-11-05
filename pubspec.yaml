@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_native_splash: ^2.4.2
   flutter_scale_ruler: ^1.0.0
   google_fonts: ^6.2.1
   page_transition: ^2.1.0
@@ -40,9 +41,21 @@ dependencies:
   syncfusion_flutter_gauges: ^27.1.58
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
   flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/bmi.jpg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+flutter_native_splash:
+  color: "#D1D9E6" # Color of the background of the splash screen
+  image: assets/images/bmi.jpg # image path
+  android_12:
+    image: assets/images/bmi.jpg # image path
+    color: "#D1D9E6" # Color of the background of the splash screen
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -54,8 +67,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

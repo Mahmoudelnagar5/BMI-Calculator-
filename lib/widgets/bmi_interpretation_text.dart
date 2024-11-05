@@ -13,14 +13,17 @@ class BmiInterpretationText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      getBMIInterpretation(bmiScore),
-      style: GoogleFonts.poppins(
-        fontSize: 20,
-        fontWeight: FontWeight.w600,
-        fontStyle: FontStyle.italic,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      child: Text(
+        getBMIInterpretation(bmiScore),
+        style: GoogleFonts.poppins(
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
+          fontStyle: FontStyle.italic,
+        ),
+        textAlign: TextAlign.center,
       ),
-      textAlign: TextAlign.center,
     );
   }
 }

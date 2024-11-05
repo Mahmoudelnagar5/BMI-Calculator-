@@ -5,6 +5,7 @@ import 'provider/theme_provider.dart';
 import 'views/bmi_view.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     ChangeNotifierProvider(
       create: (_) => ThemeProvider(),
